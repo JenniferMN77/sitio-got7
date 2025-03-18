@@ -77,7 +77,9 @@ html{
     cursor: pointer;
 }
 
-
+.a{
+    color: white;
+}
 @keyframes desplazamiento{
     /* desplazamiento inicial*/
     0%{
@@ -286,7 +288,7 @@ html{
 
 
 /*Seccion logros y premios*/
-.servicios{
+.logros{
     width: 80%;
     background: var(--verdeClaro);
     padding: 20px;
@@ -296,22 +298,50 @@ html{
     margin: auto;
 
 }
-.servicios h2{
+.logros h2{
     font-size: 5rem;
     text-align: center;
     color: var(--blanco);
 }
 @media(min-width:768px){
-    .contenido-servicios{
+    .contenido-logros{
         display:grid;
         grid-template-columns:repeat(3,1fr);
         gap: 1rem;
     }
+    .logro {
+        width: 100%; /* Cambia a 100% para que ocupe el espacio disponible */
+        max-width: 250px; /* Mantiene el ancho máximo */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px auto; /* Centra el logro en su contenedor */
+    }
+
+    .logro img {
+        width: 10rem; /* Aumenta el tamaño de la imagen */
+        height: 10rem; /* Aumenta el tamaño de la imagen */
+    }
+
+    .logro h3 {
+        font-size: 2rem; /* Aumenta el tamaño del título */
+    }
+
+    .logro p {
+        font-size: 1.4rem; /* Aumenta el tamaño del texto */
+    }
+
+    .logro:hover {
+        cursor: pointer;
+        transform: scale(1.05); /* Añade un efecto de escala al pasar el ratón */
+    }
+
+    .logro:hover .fas {
+        background-color: var(--verdeMedio);
+    }
 }
 
-.servicio{
-    width: 310px;
-    height: 230px;
+.logro{
+    width: 250px;
+    height: 250px;
     margin: 20px;
     padding: 20px;
     background: #2b2a2a;
@@ -320,15 +350,15 @@ html{
     transition: 0.3s;
     gap: 15px;
 }
-.servicio .header {
+.logro .header {
     display: flex;
     align-items: center; /* Centra verticalmente la imagen con el título */
     gap: 10px; /* Espacio entre la imagen y el título */
 }
-.servicio img{
+.logro img{
     background-color: var(--verdeClaro);
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 8.5rem;
+    height: 8.5rem;
     border-radius: 15%;
     justify-content: center;
     padding: 2rem;
@@ -336,29 +366,28 @@ html{
     transition: all .3s ease-in-out;
 }
 
-
-.servicio h3{
+.logro h3{
     font-size: 1.9rem;
     color: var(--grisClaro);
     margin: 0;
     text-align: left;
 }
-.servicio p{
+.logro p{
     font-size: 1.3rem;
     text-align:justify;
     font-weight: bold;
     margin-top: 10px;
 }
 @media(min-width: 768px){
-    .servicio p{
+    .logro p{
         text-align:justify;
     }
 }
 @media(min-width: 768px){
-    .servicio:hover{
+    .logro:hover{
         cursor: pointer;
     }
-    .servicio:hover .fas{
+    .logro:hover .fas{
         background-color:var(--verdeMedio);
     }
 }

@@ -21,6 +21,9 @@ h1,
 h2 {
     color: var(--azul-acero);
 }
+.a{
+    color: var(--negro-profundo);
+}
 
 header {
     background-color: var(--beige-arena);

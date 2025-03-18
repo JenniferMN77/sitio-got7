@@ -4,9 +4,9 @@
     --azulClaro:#006FE6;
     --blanco:#FEFCFB;
     --verde: #2e7d32;
-    --titulos:'Josefin Sans', serif;
-    --parrafos:'Montserrat', sans-serif;
-    --lista:'Inter', sans-serif;
+    --titulos: 'Josefin Sans', serif;
+    --parrafos: 'Montserrat', sans-serif;
+    --lista: 'Big Shoulders Stencil', sans-serif;
 }
 
 header {
@@ -14,6 +14,9 @@ header {
     color: white;
     text-align: center;
     padding: 1rem 0;
+}
+.a{
+    color: white;
 }
 /*banner*/
 #banner {
@@ -28,7 +31,7 @@ header {
 
 #banner img {
     width: 100%;
-    max-height: 200px;
+    max-height: 300px;
     object-fit: cover;
     opacity: 0;
     transform: translateY(-50px);
@@ -86,7 +89,7 @@ section {
 
 h2 {
     color: #1b5e20;
-    font-family: 'Josefina Sans', sans-serif;
+    font-family: var(--lista);
     font-weight: bold;
 }
 
@@ -94,6 +97,7 @@ h2 {
 #info-general {
     position: relative;
     width: 100%;
+    height: 500px;
     padding: 50px 0;
     color: white;
     text-align: center;
@@ -111,7 +115,8 @@ h2 {
 
 .info-content p strong {
     font-weight: bold;
-    color: white; 
+    color: white;
+    line-height: 32px;
 }
 .video-bg {
     position: absolute;
@@ -136,28 +141,91 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
+    width: 70%;
+    height: 90%;
 }
 
-
+/*para el iframe de spotify*/
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (opcional) */
+    width: 83%;
+    margin: auto;
+    margin-bottom: 20px;
+}
 
 /*--------------------------*/
 /*seccion para galeria*/
-.imagenes {
+/*seccion para galeria carrusel*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel {
+    position: relative;
+    max-width: 550px;
+    max-height: 350px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    transition: transform 0.5s ease-in-out;
 }
 
-.imagenes img {
-    width: 30%;
-    border-radius: 10px;
-    transition: transform 0.3s;
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
 
-.imagenes img:hover {
-    transform: scale(1.05);
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active {
+    background-color: white;
+}
+
 
 /*Seccion videos*/
 
@@ -271,7 +339,7 @@ h2 {
     width: 40px; 
     height: 40px;
     padding: 10px;
-    background-color: #f1e7c6; 
+    background-color: #252e25; 
     border-radius: 10px;
 }
        
@@ -280,7 +348,7 @@ footer{
     overflow: hidden;
     background-color: #2e7d32;
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--parrafos);
     margin-bottom: 15px;
     margin-top: 20px;
     padding: 10px;

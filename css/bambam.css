@@ -10,8 +10,8 @@
     --Azul-Medianoche: #2C3E50;
     --beige-arena: #F5F5DC; /* Añadido para el fondo de secciones */
     --blanco-humo: #F0F0F0;/* Añadido para el texto */
-    --gris-medio: #B0B0B0;/* Añadido para el texto de navegación */
-    --negro-profundo: #1A1A1A;/* Añadido para títulos */
+    --gris-medio: #B0B0B0;
+    --negro-profundo: #1A1A1A;
 
     --titulos: 'Josefin Sans', serif;
     --parrafos: 'Montserrat', sans-serif;
@@ -28,6 +28,9 @@ body {
 h1,
 h2 {
     color: var(--violeta-neon);
+}
+.a{
+    color: var(--negro-elegante);
 }
 
 header {
