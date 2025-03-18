@@ -1,0 +1,95 @@
+.ventajas{
+    padding: 5rem;
+    background-color: #2e8b57;
+    gap: 10px;
+}
+
+.seccion{
+    position: relative;
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en filas */
+    justify-content: space-between; /* Espacia los elementos */
+    gap: 5px;
+
+}
+
+.galeria{
+    width: 80%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria li{
+    margin: 5px;
+}
+
+.galeria img{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 2px solid #098738;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    column-gap: 10px;
+
+}
+
+
+/*Estilo para la ventana modal*/
+.modal{
+    display: none; /* Oculta todas las modales por defecto */
+    z-index: 1;
+}
+.modal:target{
+    display: block; /* Muestra la modal cuando se activa */
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite el desplazamiento si el contenido es más grande que la ventana */
+}
+
+
+.imagen{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagen a:nth-child(2)
+  {
+    margin: 0;
+    height: 100%;
+  }
+  
+.foto {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho de su contenedor */
+    height: 80%; /* Mantiene la relación de aspecto de la imagen */
+    max-width: 80%; /* Limita el tamaño máximo del ancho de la imagen al 80% del contenedor */
+    max-height: 80vh; /* Limita el tamaño máximo de la altura al 80% de la altura de la ventana */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+    border: 5px solid #fff; /* Borde blanco */
+    box-sizing: border-box; /* Asegura que el borde se incluya en las dimensiones de la imagen */
+    border-radius: 25px; /* Bordes redondeados */
+}
+
+.icono{
+    height: 2rem;
+    width: 2rem;
+}
