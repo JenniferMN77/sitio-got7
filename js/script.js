@@ -1283,7 +1283,7 @@ Since I walked out the door, oh-oh-oh-oh
 Since I walked out the door, oh-oh-oh-oh
 Since I walked out the door, oh-oh-oh-oh
 Since I walked out the door` },
-    { title: "GOT7- Thank You", file: "canciones/GOT7- Thank Yoump3", lyrics: `En las antiguas memorias
+    { title: "GOT7- Thank You", file: "canciones/GOT7- Thank You.mp3", lyrics: `En las antiguas memorias
 오래된 기억 속에
 oraedoen gieok soge
 
